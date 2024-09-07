@@ -4,7 +4,7 @@
 # Purpose: Represents a Project that a Center creates and manages
 # Version Alpha
 # Dedicated to Swamiji's Feet
-from appointment import Appointment
+from serverpy.datatypes.appointment import Appointment
 class Project:
     def __init__(self, name:str):
         self.name:str = name

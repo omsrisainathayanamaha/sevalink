@@ -35,8 +35,11 @@ def checkUserExistence(username:str):
     return True
 
 def checkLogin(username:str, password:str):
+    
     formatted = format(username, password)
+    
     f = open(serverpy.serverConstants.PASS_DOCUMENT)
+    
     for i in f:
         if i == formatted:
             return True

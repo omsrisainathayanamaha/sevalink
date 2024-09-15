@@ -7,12 +7,10 @@
 from serverpy.datatypes.center import Center
 from serverpy.datatypes.appointment import Appointment
 class Member:
-    def __init__(self, name:str):
+    def __init__(self, name:str, username:str):
         self.myCenter:Center = Center()
         self.name:str = name
-        self.id:int = -1
+        self.username:str = username
         self.appointments:list[Appointment] = []
-    def setId(self, nextId:int):
-        self.id = nextId
     def setCenter(self, c:Center):
         self.myCenter = c
